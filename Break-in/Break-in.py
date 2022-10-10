@@ -88,7 +88,7 @@ class BreakIn:
         self.ballPos = (XSIZE/2, WALL_SIZE)
 
         #Calculate a random direction for the ball to move in, so that it will be moving with SPEED in that direction
-        xSpeed = random.random() * 5
+        xSpeed = random.random() * SPEED
         ySpeed = math.sqrt(float(SPEED) ** 2 - xSpeed ** 2)
         if random.randint(0,1) == 1:
             xSpeed = -xSpeed
